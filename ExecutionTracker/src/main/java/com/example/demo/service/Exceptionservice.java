@@ -19,6 +19,7 @@ public class Exceptionservice {
 		Map<String, Object> map = new HashMap<>();
 		if(exception.length()<3) {
 			//map.put(ExceptionConstant.error, getErrorList("1001", "input value is empty"));
+			System.out.println("exception message");
 			throw new DataHandlingException("1002", "value is empty");
 		}
 		
@@ -29,6 +30,7 @@ public class Exceptionservice {
 		ValidationResponse validationResponse = new ValidationResponse();
 		validationResponse.setCode(code);
 		validationResponse.setMessage(message);
+		System.out.println("get error list in exception service");
 		return validationResponse;
 	}
 }

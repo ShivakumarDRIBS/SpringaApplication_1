@@ -21,6 +21,7 @@ public class GlobalExceptionHandler {
 	public @ResponseBody ResponseEntity<Object> handleException(DataHandlingException ex) {
 		Map<String, Object> map = new HashMap<>();
 			map.put(ExceptionConstant.error, getErrorList(ex.getCode(), ex.getMessage()));
+			System.out.println("handleexception");
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(map);
 	}
 	
@@ -28,6 +29,7 @@ public class GlobalExceptionHandler {
 		ValidationResponse validationResponse = new ValidationResponse();
 		validationResponse.setCode(code);
 		validationResponse.setMessage(message);
+		System.out.println("get error list");
 		return validationResponse;
 	}
 }
