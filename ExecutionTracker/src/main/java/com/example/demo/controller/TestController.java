@@ -45,6 +45,7 @@ public class TestController {
 		System.out.println(obj);
 		JSONObject employeeJson = new JSONObject(employee);
 		System.out.println(employee.toString());
+		System.out.println("checking test data");
 		return employeeJson.getString("location");
 	}
 	

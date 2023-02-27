@@ -20,6 +20,7 @@ public class DataHandlingException extends RuntimeException{
 		return code;
 	}
 	public String getMessage() {
+		System.out.println(message);
 		return message;
 	}
 	@Override
