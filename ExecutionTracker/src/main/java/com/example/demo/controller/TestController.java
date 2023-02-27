@@ -40,6 +40,7 @@ public class TestController {
 		String token = request.getHeader("token").split("\\.")[1];
 		String data = new String(java.util.Base64.getDecoder().decode(token));
 		System.out.println(data);
+		System.out.println("checking"+data);
 		JSONObject obj = new JSONObject(data);
 		System.out.println(obj);
 		JSONObject employeeJson = new JSONObject(employee);

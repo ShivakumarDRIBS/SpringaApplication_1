@@ -16,6 +16,7 @@ public class DataHandlingException extends RuntimeException{
 		this.message = message;
 	}
 	public String getCode() {
+		System.out.println(code);
 		return code;
 	}
 	public String getMessage() {
