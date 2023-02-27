@@ -30,7 +30,7 @@ public class Exceptionservice {
 		ValidationResponse validationResponse = new ValidationResponse();
 		validationResponse.setCode(code);
 		validationResponse.setMessage(message);
-		System.out.println("get error list in exception service");
+		System.out.println("get error list in exception service updated in main");
 		return validationResponse;
 	}
 }
