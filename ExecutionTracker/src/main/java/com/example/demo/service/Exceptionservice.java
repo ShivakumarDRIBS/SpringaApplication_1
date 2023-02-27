@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.constants.ExceptionConstant;
 import com.example.demo.exception.DataHandlingException;
 import com.example.demo.model.ValidationResponse;
 
@@ -29,7 +30,7 @@ public class Exceptionservice {
 		ValidationResponse validationResponse = new ValidationResponse();
 		validationResponse.setCode(code);
 		validationResponse.setMessage(message);
-		System.out.println("get error list in exception service updated");
+		System.out.println("get error list in exception service updated in main");
 		return validationResponse;
 	}
 }
